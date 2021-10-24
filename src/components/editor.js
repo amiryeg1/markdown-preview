@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { initialInput } from "../store/initial_input";
 import { setText } from "../store/input_slice";
-import {initialInput} from "../store/initial_input"
+import { useDispatch } from "react-redux";
+import "./editor.css";
 
 const Editor = () => {
   const dispatch = useDispatch();
@@ -11,15 +11,14 @@ const Editor = () => {
   return (
     <div>
       <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
+      <h2 style={{ textAlign: "center" }}>enter markdown</h2>
       <textarea
-        style={{ width: 500, height: 300 }}
         id="editor"
         onChange={textHandler}
         typeof="text"
         spellCheck="false"
       >
-{initialInput}
+        {initialInput}
       </textarea>
     </div>
   );

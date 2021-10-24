@@ -1,8 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {initialInput} from "./initial_input"
+import { initialInput } from "./initial_input";
+
 const initialState = {
   value: initialInput,
 };
+
 const inputSlice = createSlice({
   name: "inputText",
   initialState,

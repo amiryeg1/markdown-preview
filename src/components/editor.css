@@ -1,0 +1,13 @@
+#editor {
+  width: 400px;
+  height: 300px;
+  background-color: #1d1f20;
+  color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  #editor {
+    margin: auto;
+    width: 90%;
+  }
+}

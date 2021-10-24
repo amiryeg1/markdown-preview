@@ -1,5 +1,23 @@
 .App {
+  margin: auto;
   text-align: center;
+}
+.container {
+  margin-left: 200px;
+  display: flex;
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    height: fit-content;
+    display: inline-block;
+    margin: auto;
+  }
+  .App {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
 }
 
 .App-logo {

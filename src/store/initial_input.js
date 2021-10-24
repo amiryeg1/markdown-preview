@@ -1,15 +1,15 @@
-export const initialInput =
-`
-# markdown preview project
-## by Amir Yeganeh
+export const initialInput = `
+# Sample Markdown Previewer 
+----
+## h2 Heading
+${"`this is an inline code`"}
 
-[my github](https://github.com/amiryeg1)
-below is a ${"`javascript`"} variable:
-
+---
 ${"```js"}
-${"var age = 20"}
+${"this is a code block"}
 ${"```"}
-
+---
+our list item: 
 1. first item
 2. second item
 
@@ -17,10 +17,16 @@ ${"```"}
 >
 >> nested block quote.
 
-an image 
+it also supports images!
 
-![nodejs image](https://github.com/amiryeg1/nodejs-lessons/blob/master/nodejs.jpg)
+![nodejs image](https://res.cloudinary.com/practicaldev/image/fetch/s--_pyWGSyD--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/w9u60357jk4ozdho7urq.jpg)
 
-and finally this is a **bold text**
 
-`
+Text attributes *italic*, **bold**, ${"`monospace`"}, ~~strikethrough~~ .
+
+---
+
+#### Created by:
+> [Amir Yeganeh](https://github.com/amiryeg1)
+<br>
+`;
